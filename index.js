@@ -7,6 +7,8 @@ import {
   hash,
   compress,
   decompress,
+  cat,
+  add
 } from "./command-handlers/index.js";
 import { ERROR_MESSAGE } from "./operation-error.js";
 
@@ -63,7 +65,7 @@ stdin.on("data", async (command) => {
 
         if (action.startsWith("cat ")) {
           const argsString = action.slice(4);
-          read(argsString, currentPath);
+          cat(argsString, currentPath);
           break;
         }
 

@@ -5,3 +5,5 @@ export * from "./os.js";
 export * from "./hash.js";
 export * from "./compress.js";
 export * from "./decompress.js";
+export * from "./cat.js";
+export * from "./add.js";
