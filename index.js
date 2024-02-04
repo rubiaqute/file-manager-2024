@@ -10,7 +10,9 @@ import {
   cat,
   add,
   rename,
-  copy
+  copy,
+  move,
+  remove
 } from "./command-handlers/index.js";
 import { ERROR_MESSAGE } from "./operation-error.js";
 
