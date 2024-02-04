@@ -1,5 +1,13 @@
 import { homedir } from "os";
-import { up, ls, cd, osSystem, hash } from "./command-handlers/index.js";
+import {
+  up,
+  ls,
+  cd,
+  osSystem,
+  hash,
+  compress,
+  decompress,
+} from "./command-handlers/index.js";
 import { ERROR_MESSAGE } from "./operation-error.js";
 
 const { stdin, stdout, argv } = process;
