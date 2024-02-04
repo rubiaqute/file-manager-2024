@@ -8,7 +8,9 @@ import {
   compress,
   decompress,
   cat,
-  add
+  add,
+  rename,
+  copy
 } from "./command-handlers/index.js";
 import { ERROR_MESSAGE } from "./operation-error.js";
 
@@ -53,7 +55,7 @@ stdin.on("data", async (command) => {
 
         if (action.startsWith("rn ")) {
           const argsString = action.slice(3);
-          rn(argsString, currentPath);
+          rename(argsString, currentPath);
           break;
         }
 
